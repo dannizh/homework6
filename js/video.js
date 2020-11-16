@@ -29,9 +29,11 @@ document.querySelector("#mute").addEventListener("click", function() {
 	console.log("Mute");
 	if(video.muted == false){
 		video.muted = true;
+		document.querySelector("#mute").innerHTML = 'Unmute';
 	}
 	else{
 		video.muted = false;
+		document.querySelector("#mute").innerHTML = 'Mute';
 	}
 });
 
