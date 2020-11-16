@@ -22,7 +22,7 @@ document.querySelector("#pause").addEventListener("click", function() {
 document.querySelector("#volumeSlider").addEventListener("change", function() {
 	console.log(this);
 	console.log(this.value);
-	let vol = document.querySelector("#volume").innerHTML = document.querySelector("#volumeSlider").value + "%";
+	let vol = document.querySelector("#volume").innerHTML = document.querySelector("#volumeSlider").value *0.01;
 	console.log(vol);
 });
 document.querySelector("#mute").addEventListener("click", function() {
