@@ -54,8 +54,10 @@ document.querySelector("#skip").addEventListener("click", function(){
 });
 
 document.querySelector("#old").addEventListener("click", function(){
+	let element = document.querySelector("#old");
+	element.classList.add('OldTime');
 	video.style.filter = "grayscale(100%)";
-	console.log("Old School");
+	console.log("Old");
 });
 
 document.querySelector("#original").addEventListener("click", function(){
