@@ -54,15 +54,12 @@ document.querySelector("#skip").addEventListener("click", function(){
 });
 
 document.querySelector("#old").addEventListener("click", function(){
-	let element = document.querySelector("#old");
-	element.classList.add('OldTime');
-	video.style.filter = "grayscale(100%)";
-	console.log("Old");
+	video.classList.add('oldTime');
+	console.log(video);
 });
 
 document.querySelector("#original").addEventListener("click", function(){
-	let d = document.querySelector("#old");
-	d.classList.remove('OldTime');
-	video.style.filter = "grayscale(0%)";
-	console.log("Original");
+	video.classList.remove('oldTime');
+	console.log(video);
 });
+
